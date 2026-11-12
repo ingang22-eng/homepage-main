@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>1st SCIENCE LAB</title>
+<script>
+/* no1science.com — 새 홈페이지로 넘어가기 전까지 쓰는 작은 길잡이.
+   알림톡 버튼·성적표·월말 평가·학습 페이지 주소(?a= · ?report= · ?mr= · ?p=find|study|watch)는 여기서 바로 연다(learn.html).
+   그 밖의 주소는 시험판(test.no1science.com)으로 넘긴다. 넘어가는 날 이 파일을 새 홈페이지 화면으로 바꾼다. */
+(function () {
+  var s = location.search, h = location.hash;
+  if (/[?&](p=(find|study|watch)(&|$)|report=|mr=|a=)/.test(s)) location.replace('learn.html' + s + h);
+  else location.replace('https://test.no1science.com/' + s + h);
+})();
+</script>
+</head>
+<body style="margin:0;background:#f6f7f9">
+<p style="padding:72px 20px;text-align:center;color:#55606e;font:500 15px/1.7 sans-serif">불러오는 중입니다…</p>
+</body>
+</html>
